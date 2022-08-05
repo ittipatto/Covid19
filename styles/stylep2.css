@@ -1,0 +1,218 @@
+html {
+    display: flex;
+    font-size: 18px;
+    font-family: 'Open-san' , sans-serif;
+    /* background-color: #66b5ff; */
+    margin: 0 auto;
+    padding: 0 auto;
+}
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+body {
+    margin: 0 auto;
+}
+.banner {
+    background-color: aquamarine;
+    margin:0;
+    padding:10px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.side {
+    flex: 20%;
+    padding: 10px;
+    background-color: lightgray;
+}
+.main {
+    flex: 80%;
+    padding: 10px;
+    background-color: wheat;
+}
+.column {
+    float: left;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+}
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+figcaption {
+    text-align: center;
+}
+p {
+    color: black;
+}
+* {
+    box-sizing: border-box;
+}
+/* for horizontal and weight more than 1040px  */
+@media (orientation: landscape) and (min-width: 1040px) {
+    p, li {
+        font-size: 20px;
+        line-height: auto;
+        letter-spacing: auto;
+    }
+
+    img {
+        max-width: fit-content;
+        height: fit-content;
+        object-fit: contain;
+    }
+    
+    .ulNav {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+    .liNav {
+        display: inline;
+        float: left;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .aNav {
+        display: block;
+        color: white;
+        text-align: center;
+        padding:0px 20px;
+        text-decoration: none;
+    }  
+}
+
+/* for horizontal and weight less than 1040px  */
+@media (orientation: landscape) and (max-width: 1039px) {
+    p, li {
+        font-size: 20px;
+        line-height: auto;
+        letter-spacing: auto;
+    }
+
+    img {
+        max-width: fit-content;
+        height: fit-content;
+        object-fit: contain;
+    }
+    
+    .ulNav {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: black;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .liNav {
+        display: inline;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .aNav {
+        display: block;
+        color: white;
+        text-align: center;
+        padding:10px auto;
+        text-decoration: none;
+    } 
+}
+
+/* For vertical and screen wight more than 1040 */
+/* @media (orientation: Portrait) and (min-width: 1040px) {
+    p, li {
+        font-size: 20px;
+        line-height: auto;
+        letter-spacing: auto;
+    }
+
+    img {
+        max-width: fit-content;
+        height: fit-content;
+        object-fit: contain;
+    }
+
+    .ulNav {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: black;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .liNav {
+        display: inline;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .aNav {
+        display: block;
+        color: white;
+        text-align: center;
+        padding:10px auto;
+        text-decoration: none;
+    } 
+} */
+
+/* For vertical and screen wight less than 1039 */
+@media (orientation: Portrait) and (max-width: 1039px) {
+
+    p, li {
+        font-size: 18px;
+        line-height: auto;
+        letter-spacing: auto;
+    }
+
+    img {
+        max-width: fit-content;
+        height: fit-content;
+        object-fit: contain;
+    }
+
+    .ulNav {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: black;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .liNav {
+        display: inline;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .aNav {
+        display: block;
+        color: white;
+        text-align: center;
+        padding:10px auto;
+        text-decoration: none;
+    } 
+}
+
+li a:hover:not(.active) {
+    background-color: white;
+    color: black;
+}
